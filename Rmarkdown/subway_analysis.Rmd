@@ -1,5 +1,11 @@
+---
+title: Analysis of proximity of NYC subway stations to green spaces
+author: Matthew Lundquist and Martha Madrid
+output: html_document
+---
+
 ```{r, data_input}
-data <- read.csv("subway_data.csv", header = TRUE, stringsAsFactors = TRUE)
+data <- read.csv("../data/subway_data.csv", header = TRUE, stringsAsFactors = TRUE)
 ```
 
 ```{r park_vs_total_area}
