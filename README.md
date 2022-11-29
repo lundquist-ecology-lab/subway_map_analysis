@@ -9,6 +9,4 @@ In this repository you will find:
 1. Analysis R code
 2. Subway station dataset
 3. Subway station map
-4. Final analysis poster
-
-![poster](https://github.com/lundquist-ecology-lab/subway_map_analysis/blob/main/Madrid_Lundquist_poster.pdf)
+4. Final analysis and [poster](https://github.com/lundquist-ecology-lab/subway_map_analysis/blob/main/Madrid_Lundquist_poster.pdf)
