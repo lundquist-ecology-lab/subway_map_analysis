@@ -1,6 +1,7 @@
 -- Import into SQL database
 -- Create database
 -- Database: subway_data
+-- mySQL
 
 create database if not exists subway_data;
 
