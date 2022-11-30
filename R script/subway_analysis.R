@@ -4,8 +4,8 @@ data <- read.csv("subway_data.csv", header = TRUE, stringsAsFactors = TRUE)
 
 ## ----park_vs_total_area-------------------------------------------------------
 
-y <- ((data$g.area) / 1000000)
-x <- ((data$b.area) / 1000000)
+y <- ((data$g_area) / 1000000)
+x <- ((data$b_area) / 1000000)
 
 model_area <- lm(y ~ x)
 summary(model_area)
@@ -21,7 +21,7 @@ text(y = y[5], x = x[5] + 25, "Staten Island")
 
 ## ----no_of_stations-----------------------------------------------------------
 
-y <- data$g.stations
+y <- data$g_stations
 x <- data$stations
 
 station_model <- glm(y ~ x, family = poisson)
@@ -39,8 +39,8 @@ text(y = y[5], x = x[5] + 21, "Staten Island")
 ## ----stations_vs_area---------------------------------------------------------
 ## Total Area
 
-x <- data$b.area / 1000000
-y <- data$g.stations
+x <- data$b_area / 1000000
+y <- data$g_stations
 
 area_model <- glm(y ~ x, family = poisson)
 summary(area_model)
@@ -56,8 +56,8 @@ text(y = y[5], x = x[5] + 23, "Staten Island")
 
 ## ----stations_vs_green--------------------------------------------------------
 
-x <- data$g.area / 1000000
-y <- data$g.stations
+x <- data$g_area / 1000000
+y <- data$g_stations
 
 green_model <- glm(y ~ x, family = poisson)
 summary(green_model)
@@ -69,4 +69,3 @@ text(y = y[2], x = x[2] - 1.2, "Brooklyn")
 text(y = y[3], x = x[3] - 1.1, "Queens")
 text(y = y[4], x = x[4] + 1, "Bronx")
 text(y = y[5], x = x[5] - 1.8, "Staten Island")
-
