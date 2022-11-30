@@ -1,4 +1,2 @@
 *.sql linguist-detectable=true
-*.tex linguist-vendored
-*.cls linguist-vendored
 *.Rmd  linguist-detectable
